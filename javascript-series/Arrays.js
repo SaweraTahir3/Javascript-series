@@ -93,3 +93,110 @@ console.log(num);
 let maping = ['user' , 'name', 'age', 'marks', 'class', ]
 let store = maping.map((item ,index)=>`${index} : ${item}`)
 console.log(store);
+
+//sort
+const balanceIn = [50, 30, 20, 10, 40];
+balanceIn.sort((a, b) => a - b);
+console.log(balanceIn); 
+
+//reverse
+const arr = [1, 2, 3, 4, 5]
+arr.reverse();
+console.log(arr); 
+ 
+//filter
+const numbers = [5, 12, 8, 130, 44];
+
+const result = numbers.filter((num) => num > 30)
+console.log(result); // [12, 130, 44]
+
+
+const filtered = [10,2,4,8,10 ]  
+const resulted = filtered.filter((sum) => sum > 5)
+console.log(resulted);
+
+
+
+const mixedArray = [0, 1, false, 2, "", 3, null, undefined];
+const truthyValues = mixedArray.filter(Boolean);
+console.log(truthyValues); 
+
+
+
+ //even number 
+ const evenNum = [1, 2, 3, 4, 5, 6,7,8,10 ];
+const evenSquares = evenNum
+  .filter((num) => num % 2 === 0) // Filter even numbers
+  .map((num) => num ** 2);        // Square them
+
+console.log(evenSquares); 
+
+
+
+const age = [ 10,15,12, 18 , 20, 5, 7,9]
+const countAge = age.filter((ages) => ages < 10) 
+// const countAge = age.filter((ages) => ages > 10) 
+console.log(countAge);
+
+
+//dabal numbers ko remove karo 
+const uniqueType = [1,1,2,3,3,4,5,6,7,7,7,7,7,8,9,10]
+const drobleNum = uniqueType.filter(( num ,index, array) => array.indexOf(num) === index )
+console.log(drobleNum);
+
+
+//dabal string ko remove karo 
+const stringNUmber = ['apple' , 'mango' ,'apple' , 'banana' , 'apple','orange']
+const changed = stringNUmber.filter((num , index, array)=> array.indexOf(num) === index)
+console.log(changed);
+
+
+// array me si string value nikalo 
+const mix = ['apple' ,  undefined , 'banana'  , null ,'mango', 1,2,3,4,5]
+const getstring = mix.filter(item => typeof item === "string" )
+console.log(getstring);
+
+
+//array me si number ko nikalo
+const mixd= [ 0,'apple'  ,8,'mango', true , undefined,'apple' , 'banana'  , null ,1 ]
+const getNumber = mixd.filter(item => typeof item === "number" )
+console.log(getNumber)
+
+//reduce 
+//bignumber nikalana he
+const  bignum = [1,2,30,50]
+const bigerNum = bignum.reduce((acc , num) => acc < num  ? num : acc)
+console.log(bigerNum);
+
+//all numbers ko + karna he 
+const count = [ 10,20,30,40 ]
+ const counted = count.reduce((acc , num ) => acc + num, )
+ console.log(counted);
+ 
+ const reduced = ['html' , "html" , 'css' ,'react', 'javascript' , 'react']
+ const cout = reduced.reduce((acc , topic) =>{
+  acc[topic] = (acc[topic] || 0 ) +1 ;
+  return acc;
+ } , {})
+ console.log(cout);
+ 
+//reduceRight
+ const letters = ["H", "e", "l", "l", "o"];
+
+ const reversed = letters.reduceRight((acc, letter) => acc + letter, "");
+ console.log(reversed); // "olleH"
+ 
+
+ //some
+//ek condition true hoge tu ans true
+ const somer = [1, 3, 5, 7];
+
+const hasEven = somer.some((num) => num % 2 === 0);
+console.log(hasEven);
+console.log(somer.length);
+//answer boolean me deta he some
+
+//every 
+//all condition true hoge 
+let arr = [1, 2, 3];
+let allGreaterThanZero = arr.every(x => x > 0); // true
