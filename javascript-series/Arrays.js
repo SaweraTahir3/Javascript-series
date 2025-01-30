@@ -73,7 +73,7 @@ console.log(compalted);
  console.log(Array.isArray('kiya yai array he ?')); //answer in boolean
  console.log(Array.from('me array  me change hojati ho from lagni si'));
 
-
+//of
  let marks1 = 600 ;
  let marks2 = 500;
  let marks3 = 5000 ;
@@ -182,7 +182,6 @@ const count = [ 10,20,30,40 ]
  
 //reduceRight
  const letters = ["H", "e", "l", "l", "o"];
-
  const reversed = letters.reduceRight((acc, letter) => acc + letter, "");
  console.log(reversed); // "olleH"
  
@@ -200,3 +199,4 @@ console.log(somer.length);
 //all condition true hoge 
 let arr = [1, 2, 3];
 let allGreaterThanZero = arr.every(x => x > 0); // true
+//array methods completed !
