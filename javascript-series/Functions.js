@@ -172,5 +172,21 @@ console.log(this); //empty
 // function and arrow function me this key word node.js me empty brakets  and undefined deta he 
 // this key word Brower me alag tareeqi si  work karta he yani  global object  brower me deta he 
 
- // --------------------------------end -------------------------------------------
+
+// ager ap jaldi apna function run karwana chhati he  to next line ko follow kari
+//Immediately Invoked Function Expressions (IIFE)
+//golbal scope ki pullotion si bachni ki leyi () use karti he next line me example he
+(function Iife() {
+    console.log('Database Connected');
+    
+})(); 
+
+// arrowfunction in (Iife)
+( (names) => {
+    console.log(`welcome to Immediately Invoked Function Expressions using ${names}`);
+    
+})('Arrow Function');
+
+
+ // --------------------------------end---------------------------------------------
 
