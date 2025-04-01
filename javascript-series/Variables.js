@@ -26,7 +26,7 @@ console.table([acountName, acountId, acountEmail, openAcount, City])
 
 var acountName = 'sawera webDeveloper';
 acountId = 1511;
-openAcount = false;
+openAcount = false ;
 City = 'Lahore';
 
 console.table([acountName, acountId, openAcount, City]);
