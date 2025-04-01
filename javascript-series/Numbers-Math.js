@@ -22,13 +22,14 @@ console.log(price);
  //toExponential()
  let expoo = 350456
  let expoChange = expoo.toExponential(3) ;
- console.log(expoChange); 
+ console.log(expoChange); //"3.505e+5"
+
  
 //  Formats a number to a specified length.
  //toPrecision()
 let Total = 10.05
 let TotalChange = Total.toPrecision(3)
-console.log(TotalChange);
+console.log(TotalChange); //10.1
 
 
 // Returns the primitive value of a Number object.
@@ -60,7 +61,7 @@ console.log(Number.isFinite('string'));// false
 //Number.parseInt()
 // Parses a string and returns an integer.
 
-console.log(Number.parseInt('500.10'))
+console.log(Number.parseInt('500.10')) //500
  
 // note : String  change  in number integer or point ki baad ki numbers ni ai gii  ;
 
@@ -77,27 +78,27 @@ console.log(Number.isSafeInteger(12345678910)); //true
 
 // Rounds a number to the nearest integer.
 // Math.round()
-console.log(Math.round(9.9));
+console.log(Math.round(9.9)); //10
 
 // Rounds a number downward to the nearest integer.
 // Math.floor()
-console.log(Math.floor(20.9));
+console.log(Math.floor(20.9)); //20
 
 // Rounds a number upward to the nearest integer.
 // Math.ceil()
-console.log(Math.ceil(10.9));
+console.log(Math.ceil(10.9)); //11
 
-// Returns the absolute value of a number.
+//  (removes the negative sign)..
 // Math.abs()
 console.log(Math.abs(-256));
 
 // Returns the square root of a number.
 // Math.sqrt()
-console.log(Math.sqrt(36));
+console.log(Math.sqrt(36)); //6
 
 // Returns the base raised to the exponent.
 //Math.pow
-console.log(Math.pow(2, 3));// 2*2*2
+console.log(Math.pow(2, 3));// 2*2*2 //8
 // note 2 ko 3 time multiple karo
 
 //Math.random()
