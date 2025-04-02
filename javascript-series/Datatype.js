@@ -159,12 +159,12 @@ console.log(typeof (change));
 // charAt(index): Returns the character at the specified index.
 
 let retured  = 'javascript-series' ;
-console.log(retured.charAt(3));
+console.log(retured.charAt(3));//a
 
 // charCodeAt(index): Returns the Unicode of the character at the specified index.
 
 let Unicode = 'javascript-series by sawera tahir';
-console.log(Unicode.charCodeAt(3));
+console.log(Unicode.charCodeAt(3)); 
 
 // indexOf(searchValue, fromIndex): Returns the index of the first occurrence of a specified value in a string.
 
@@ -182,7 +182,7 @@ console.log(student.concat(name0));
 // includes(searchString, position): Determines whether a string contains the characters of a specified string.
 
 let topic = 'javascript-Series 2025' ;
-console.log(topic.includes('javascript'));
+console.log(topic.includes('javascript'));//true
 
 
 // endsWith(searchString, length): Determines whether a string ends with the characters of a specified string.
@@ -214,7 +214,7 @@ console.log(searchvalue.search('t')); //index number nikal ki de ga
 
 // slice(beginIndex, endIndex): Extracts a section of a string and returns it as a new string.
 
-let peace = 'freelancer  number one full Strack Developer  in pakistan iss  SaweraTahir  2025';
+let peace = 'freelancer  number one full Strack Developer  in pakistan is  SaweraTahir  2025';
 console.log(peace.slice(0 , 90));
 
 
