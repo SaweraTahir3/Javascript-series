@@ -36,3 +36,14 @@ const userBooks = booksName.filter((bk)=> { return bk.publish >= 2000 && bk.genr
 
 console.log(userBooks);
 
+//map()
+const myNumber = [1,2,3,4,5,6,7,8,9,10]
+// let store = myNumber.map( (num ) => num  + 10)
+// console.log(store);
+
+// cheening yani ek sath methods use kar sakhti  he 
+const  newnums = myNumber
+    .map((num) => num * 10 )
+    .map((num) => num + 1)
+    .filter((num)=>{ return num <= 40})
+console.log(newnums);
