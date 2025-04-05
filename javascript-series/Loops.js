@@ -70,14 +70,88 @@ while (arr < array.length) {
     console.log(`value is ${array[arr]}`);
     arr++
 }
-
-
+//do while loop
 let score = 1
 do {
     console.log(`score is ${score}`);
-    score++ ;
-    
+    score++;
+} while (score <= 10)
 
-}while (score <= 10) {
-    
+//for of loop
+const arry = [1, 2, 3, 4, 5, 6, 7]
+for (const num of arry) {
+    console.log(num);
 }
+
+const greetings = "Hello world";
+for (const greet of greetings) {
+    console.log(`Each char is ${greet}`);
+}
+// as tareeqi si work ni kar raha he .for of loop object me
+// const myObject = {
+//     'game1' : "heeloo" ,
+//     'game2' : "spiderman",
+// }
+// for (const  [obj ,value] of myObject) {
+//     console.log(obj, value);
+// } 
+
+//object in for in loop
+const myObject = {
+    js: "javascript",
+    cpp: "c++",
+    rb: "ruby",
+}
+for (const key in myObject) {
+    // console.log( myObject[key]); //keys ki value ko exess kara he 
+    console.log(`${key} shortcut is for ${myObject[key]}`);
+}
+// arry and for in loop 
+const programming = ["js", "rb", "java", "cpp", "py"]
+for (const key in programming) {
+    console.log(programming[key]);
+}
+//forEach loop
+const coding = ["js", "ruby", "java", "cpp", "python"]
+coding.forEach(function (item) {
+    console.log(item);
+})
+
+// forEach loop and arrow function
+const code = ["js", "ruby", "java", "cpp", "python"]
+coding.forEach((item) => {
+    console.log(item);
+})
+
+//array and fuction 
+const names = ["html", "css", 'javascript', "reat"]
+function printMe(items) {
+    console.log(items);
+}
+names.forEach(printMe)
+
+// foreach loop  
+const books = ["html", "css", 'javascript', "reat"]
+books.forEach((items, index, arr) => {
+    console.log(items, index, arr);
+})
+
+const mycodeing = [
+    {
+        languageName: "javascript",
+        languageFileName: "js",
+    },
+
+    {
+        languageName: "html",
+        languageFileName: "index.html",
+    },
+
+    {
+        languageName: "cascading style sheet",
+        languageFileName: "style.css",
+    },
+]
+mycodeing.forEach( (item , index) =>{
+    console.log(item.languageName , index);
+})
