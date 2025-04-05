@@ -47,3 +47,32 @@ const  newnums = myNumber
     .map((num) => num + 1)
     .filter((num)=>{ return num <= 40})
 console.log(newnums);
+
+//reduce method
+const  myReduceArray = [ 1,2,3,4 ,5 ]
+const  reduceMethod =  myReduceArray.reduce( function(acc, current) {
+    // console.log(`acc : ${acc} and current value  : ${current}`);
+    return acc + current ;
+
+}, 0)
+console.log(reduceMethod);
+
+//Example
+const shoppingCard = [
+    {itemName : "javascript Course " ,
+        price : 5000 ,
+    },
+    {itemName : "Html Course " ,
+        price : 2000 ,
+    },
+    {itemName : "React Course " ,
+        price : 3899 ,
+    },
+    {itemName : "javascript Course " ,
+        price : 4500 ,
+    },
+]
+ const Total = shoppingCard.reduce(( acc ,item )=> acc + item.price  
+  ,0 ) 
+ console.log(Total);
+ 
