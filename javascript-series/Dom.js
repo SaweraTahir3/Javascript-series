@@ -5,25 +5,20 @@
  It represents the structure of a web page as a tree of nodes.*/
 
 
-
 // Description: Selects a single HTML element by its id.
 const title = document.getElementById('tittle')
 console.log(title.innerText);
 
-
 const classes = document.getElementsByClassName('intro')
 console.log(classes[0]);
 
-
 const tags = document.getElementsByTagName('h2')
 console.log(tags);
-
 
 const gury = document.querySelector(".selector")
 gury.style.backgroundColor = "green"
 gury.style.color = "white"
 console.log(gury);
-
 
 const gyall = document.querySelectorAll("#btn")
 // gyall.style.backgroundColor = "black" ;
@@ -42,11 +37,9 @@ const bten = qury.forEach((btn) =>{
 })
 console.log(bten);// undifined
 
-
 //innertext 
 const innertexts = document.getElementsByTagName('strong').innerText = "change a inner Text in tag"
 console.log(innertexts);
-
 
 //innerHTML 
 const innerhtml = document.getElementsByName('password').innerhtml = "<button>done</button>" ;
