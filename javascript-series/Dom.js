@@ -31,3 +31,24 @@ gyall.Style.backgroundColor = "green"
 gyall.style.padding = "23px";
 gyall.style.color = "white";
 console.log(gyall);
+
+const qury = document.querySelectorAll('#btn')
+
+const bten = qury.forEach((btn) =>{
+    btn.style.backgroundColor = "black" 
+    btn.style.color = "white" 
+    btn.style.padding = "10px"
+    btn.style.borderRadius = "20px"
+})
+console.log(bten);// undifined
+
+
+//innertext 
+const innertexts = document.getElementsByTagName('strong').innerText = "change a inner Text in tag"
+console.log(innertexts);
+
+
+//innerHTML 
+const innerhtml = document.getElementsByName('password').innerhtml = "<button>done</button>" ;
+console.log(innerhtml);
+
