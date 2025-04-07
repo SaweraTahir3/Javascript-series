@@ -40,6 +40,20 @@ tiile.style.borderRadius = "15px"
 console.log(tiile);
 
 
+//textContent  // innerHTML // innerText
+const textContentsCheck = document.getElementById('tittle')
+
+console.log(textContentsCheck.textContent); //dom of javascript  test for text
+console.log(textContentsCheck.innerHTML); // dom of javascript  <span style="display: none ;">test for text</span>
+console.log(textContentsCheck.innerText);//  dom of javascript
+
+//innertext 
+const innertexts = document.getElementsByTagName('strong').innerText = "change a inner Text in tag"
+console.log(innertexts);
+
+//innerHTML 
+const innerhtml = document.getElementsByName('password').innerhtml = "<button>done</button>" ;
+console.log(innerhtml);
 
 
 const gury = document.querySelector(".selector")
@@ -63,12 +77,3 @@ const bten = qury.forEach((btn) =>{
     btn.style.borderRadius = "20px"
 })
 console.log(bten);// undifined
-
-//innertext 
-const innertexts = document.getElementsByTagName('strong').innerText = "change a inner Text in tag"
-console.log(innertexts);
-
-//innerHTML 
-const innerhtml = document.getElementsByName('password').innerhtml = "<button>done</button>" ;
-console.log(innerhtml);
-
