@@ -9,11 +9,30 @@
 const title = document.getElementById('tittle')
 console.log(title.innerText);
 
+//kasie element ki id nikalni ho tu yai use kariii 
+document.getElementById('tittle').id
+
 const classes = document.getElementsByClassName('intro')
 console.log(classes[0]);
 
+//kasie element ki class be nikal sakhti he id ki throw .
+document.getElementById('tittle').className
+
 const tags = document.getElementsByTagName('h2')
 console.log(tags);
+
+//getAttribute
+//id or class ko exuess kar sakhti he
+document.getElementById('tittle').getAttribute('id')
+document.getElementById('tittle').getAttribute('class')
+
+//setAttribute 
+//id or class be set karr sakhti he  purani be sath class or id rakh sakhti he new be laga sakhti he 
+document.getElementById('tittle').setAttribute('class' , 'test headingOne')
+document.getElementById('tittle').setAttribute('id' , "tittle newId")
+
+
+
 
 const gury = document.querySelector(".selector")
 gury.style.backgroundColor = "green"
