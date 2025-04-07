@@ -31,6 +31,14 @@ document.getElementById('tittle').getAttribute('class')
 document.getElementById('tittle').setAttribute('class' , 'test headingOne')
 document.getElementById('tittle').setAttribute('id' , "tittle newId")
 
+//styling
+const tiile = document.getElementById('heading2')
+tiile.style.backgroundColor = 'purple' 
+tiile.style.color = 'white' 
+tiile.style.padding = "20px"
+tiile.style.borderRadius = "15px"
+console.log(tiile);
+
 
 
 
