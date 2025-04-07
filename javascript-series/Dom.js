@@ -55,6 +55,17 @@ console.log(innertexts);
 const innerhtml = document.getElementsByName('password').innerhtml = "<button>done</button>" ;
 console.log(innerhtml);
 
+ // input field ko be exuses type si be kar sakhti he 
+//querySelector si ham first element  excuess kar sakhti he 
+document.querySelector('input[type="password"]')
+document.querySelector('h2')
+document.querySelector('p')
+
+//queryselectorAll  si ham all elements ko exuess kar sakhti he 
+document.querySelectorAll('#id')
+document.querySelectorAll('.class')
+document.querySelectorAll('h1')// all h1 exuses hojai gii 
+document.querySelector('p')// all p  exuses hojai gii 
 
 const gury = document.querySelector(".selector")
 gury.style.backgroundColor = "green"
