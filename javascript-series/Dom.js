@@ -123,3 +123,32 @@ const bten = qury.forEach((btn) =>{
     btn.style.borderRadius = "20px"
 })
 console.log(bten);// undifined
+
+ //appendchild
+ function addoptiLanguage(langename) {
+    const newline = document.createElement('li');
+    newline.appendChild(document.createTextNode(langename));
+    document.querySelector('.course').appendChild(newline)
+}
+console.log(addoptiLanguage('Typescript'));
+
+//edit
+   const  third = document.querySelector("li:nth-child(4)")
+    const  newli = document.createElement('li')
+    newli.textContent = "mojo"
+    third.replaceWith(newli)
+    console.log(newli);
+    
+//example
+const  first = document.querySelector('li:nth-child(1)')
+// first.outerHTML ='<li>working</li>' // as line  si be ek dam chnaged ho sakhti he value 
+const chngee = document.createElement('li')
+chngee.textContent = "Javascript in 2025"
+first.replaceWith(chngee);
+console.log(chngee);
+
+//remove
+const lasted =  document.querySelector('li:last-child')
+lasted.remove()
+
+
