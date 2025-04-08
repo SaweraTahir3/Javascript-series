@@ -91,19 +91,31 @@ li.style.backgroundColor = 'red'
 const tempList = document.querySelectorAll('li')
 tempList[2].style.color = 'blue' // answer (NOdeList) me mila he as leyi arry ki properties kuch same he  index si exuses kar rahi he.
 
+// Eample and different between  NodeList and Html COllection 
+
+// NodeList 
+// NodeList arry si milti jolti he 
+//querySelectorAll si nodelist me sab ajata he forEach methods ki help si ham kam kar sakhti he nodelist me 
+const double = document.querySelectorAll("li")
+console.log(double);//NodeList 
+// method forEach
+double.forEach((li)=>{
+    li.style.padding = "25px"
+} )
 
 
-
-
-
-
-
-
-
-
+// HTMLCollection
+// HTMLCollection bulikul different hota he 
+//asi array me change kar ki array ki methods use kar sakhti he 
+const tempooo = document.getElementsByClassName('list-item')
+console.log(tempooo);//answer html collection
+//changed in array then changes in  
+ const changeed = Array.from(tempooo)// array me changed hogaya  
+//  array methods use kar sakhti he
+ console.log(changeed);
+ 
 
 const qury = document.querySelectorAll('#btn')
-
 const bten = qury.forEach((btn) =>{
     btn.style.backgroundColor = "black" 
     btn.style.color = "white" 
