@@ -72,12 +72,35 @@ gury.style.backgroundColor = "green"
 gury.style.color = "white"
 console.log(gury);
 
+
 const gyall = document.querySelectorAll("#btn")
 // gyall.style.backgroundColor = "black" ;
 gyall.Style.backgroundColor = "green"
 gyall.style.padding = "23px";
 gyall.style.color = "white";
 console.log(gyall);
+
+// example
+const ul = document.querySelector('ul')
+const li =   ul.querySelector('li')
+li.innerText = "changed in value " // change in innerText
+console.log(li.innerText );//innnertext (one)
+li.style.backgroundColor = 'red' 
+
+//arry jisa he array ni he kuch properties milty he kafee
+const tempList = document.querySelectorAll('li')
+tempList[2].style.color = 'blue' // answer (NOdeList) me mila he as leyi arry ki properties kuch same he  index si exuses kar rahi he.
+
+
+
+
+
+
+
+
+
+
+
 
 const qury = document.querySelectorAll('#btn')
 
