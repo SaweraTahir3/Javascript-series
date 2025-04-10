@@ -152,3 +152,37 @@ const lasted =  document.querySelector('li:last-child')
 lasted.remove()
 
 
+// addEventListener() in JavaScript
+// The addEventListener() method is used to **attach an event handler*
+// * to an HTML element — like a click, mouseover, keypress, etc.
+// **Example
+
+const btn = document.getElementById("myBtn");
+
+btn.addEventListener("click", function () {
+  alert("Button was clicked!");
+});
+
+btn.addEventListener('mouseover' , function(){
+    btn.style.backgroundColor = "orange"
+});
+
+//target
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    console.log("You clicked: ", e.target.textContent);
+    e.target.style.backgroundColor = "orange";
+  });
+});
+
+const newbtn = document.querySelectorAll('.buttons')
+newbtn.forEach((btn)=>{
+btn.addEventListener('click', function(e){
+console.log("you clicked ", e.target.textContent);
+e.target.style.color = "blue"
+});
+});
+
+
