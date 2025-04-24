@@ -68,18 +68,12 @@ document.getElementById('stop').addEventListener('click' , function(e){
   alert('canot run try again')
 })
 
-document.querySelector('main').addEventListener('click' , function(e) {
-console.log(e.target.parentNode())
-
-})
-
-
-
-
-
-
-
-
-
+document.querySelector('#main').addEventListener('click' , function(e) {
+  if(e.target.tagName === 'SPAN'){
+    console.log(e.target.parentNode)
+    let removeIt = e.target.parentNode
+    removeIt.remove()
+  }
+} false)
 ```
 
