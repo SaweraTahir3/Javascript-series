@@ -74,6 +74,6 @@ document.querySelector('#main').addEventListener('click' , function(e) {
     let removeIt = e.target.parentNode
     removeIt.remove()
   }
-} false)
+}, false)
 ```
 
