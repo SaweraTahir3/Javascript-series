@@ -100,9 +100,9 @@ balanceIn.sort((a, b) => a - b);
 console.log(balanceIn); 
 
 //reverse
-const arr = [1, 2, 3, 4, 5]
+const arred = [1, 2, 3, 4, 5]
 arr.reverse();
-console.log(arr); 
+console.log(arred); 
  
 //filter
 const numbers = [5, 12, 8, 130, 44];
