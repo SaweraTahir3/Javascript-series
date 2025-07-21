@@ -54,4 +54,8 @@ setTimeout(hello, 2000)
     clearInterval(workingLine)
    })
 
+ //note : setTimeout() and setInterval() different between 
+ // setTimeout()  work in only 1 time .
+ //setInterval()  work now canot stop 
+
 ```
