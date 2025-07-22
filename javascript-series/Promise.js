@@ -58,9 +58,32 @@ promiseFour
   
 }).finally(()=>{
   console.log("the promise is either resolved and rejected");
-  
+})
+ 
+
+const promiseFive  = new Promise(function(resolve,reject){
+  setTimeout(function(){
+    let error= true;
+    if(!error){
+      resolve(" your problem are  resolved")
+    }else{
+      reject('your problem are rejected')
+    }
+    
+  },1000)
 })
 
+async function promiseConsumedFive(){
+  try{
+  const response  = await promiseFive
+  console.log(response);
+  }catch(error){
+console.log(error);
+
+  }
+  
+} 
+promiseConsumedFive()
 
 //Why Use Promises?
 // We use promises to handle asynchronous tasks, like:
