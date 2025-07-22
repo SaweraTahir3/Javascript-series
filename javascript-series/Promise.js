@@ -34,7 +34,17 @@
    promiseThree.then(function(user){
 console.log(user); // parameter ko exssise kar sakhti he yaha
    })
-
+ 
+   const promiseFour = new Promise(function(resolve , reject){
+    setTimeout(function(){
+let error = true ;
+if(!error){
+  resolve({username:"saweraweb developer" , password : "webDeve" })
+} else{
+  reject("ERROR : something went wrong ")
+}
+    },1000)
+   })
 
 
 
