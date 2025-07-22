@@ -45,7 +45,21 @@ if(!error){
 }
     },1000)
    })
-
+promiseFour
+.then((user)=>{
+  console.log(user);
+  return user.username
+})
+.then((username)=>{
+  console.log(username);
+})
+.catch(function(error){
+  console.log(error);
+  
+}).finally(()=>{
+  console.log("the promise is either resolved and rejected");
+  
+})
 
 
 //Why Use Promises?
