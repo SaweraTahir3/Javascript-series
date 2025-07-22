@@ -85,6 +85,26 @@ console.log(error);
 } 
 promiseConsumedFive()
 
+//fetch 
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/")
+    const data = response.json()
+    console.log(data);
+    
+  } catch (error) {
+    
+  }
+}
+
+
+
+
+
+
+
+
+
 //Why Use Promises?
 // We use promises to handle asynchronous tasks, like:
 
