@@ -85,6 +85,48 @@ console.log(error);
 } 
 promiseConsumedFive()
 
+//  Promise — the old way (before async/await)
+// A Promise helps you run code that takes time (like fetching data), and handle success or error later using .then() and .catch().
+
+//example 
+function getData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data mil gaya!");
+    }, 2000);
+  });
+}
+
+getData()
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
+
+
+
+
+// async/await — modern and easier way
+// async/await makes Promise-based code look simpler, like normal step-by-step code. You write await in front of the Promise to wait for the result.
+//  example
+async function showData() {
+  try {
+    const result = await getData();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+showData();
+
+
+
+
+
+
+
+
+
+
 //fetch 
 async function getAllUsers() {
   try {
