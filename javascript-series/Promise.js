@@ -154,3 +154,21 @@ showData();
 // Reading files
 
 // Waiting for user input
+
+//note: A Promise does return a value — but not immediately.
+
+//---------------------------------------------------xxx----------------------
+
+// Why do we use async in JavaScript?
+
+//We use async to make it easier to work with promises —
+//  especially when dealing with code that takes time to run, like:
+
+//Fetching data from an API
+
+//Reading from a file
+
+//Waiting for a timer
+
+// note : async means:
+// "This function will do something asynchronous (not instantly), and it will return a Promise."
