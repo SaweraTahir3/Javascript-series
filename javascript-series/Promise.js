@@ -87,8 +87,9 @@ promiseConsumedFive()
 
 // exmple ko async or promise dono me kara he
 //fetch 
-async function getAllUsers() {
 
+//async
+async function getAllUsers() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/")
     console.log(response); //kiya response me data arha he 
@@ -100,21 +101,15 @@ async function getAllUsers() {
   }}
 
 
-const promiseSix = new Promise(function(resolve,reject){
-  
+//permoise 
+fetch('https://jsonplaceholder.typicode.com/')
+.then(function(response){
+  return response.json()
 })
-
-
-
-
-
-
-
-
-
-
-
-
+.then(function(data){
+  console.log(data);
+})
+.catch(error => console.log(error))
 
 
 //  Promise — the old way (before async/await)
@@ -134,8 +129,6 @@ getData()
   .catch(error => console.log(error));
 
 
-
-
 // async/await — modern and easier way
 // async/await makes Promise-based code
 // look simpler, like normal step-by-step code. 
@@ -151,23 +144,6 @@ async function showData() {
 }
 
 showData();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Why Use Promises?
