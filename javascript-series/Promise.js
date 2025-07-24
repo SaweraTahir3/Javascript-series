@@ -85,6 +85,38 @@ console.log(error);
 } 
 promiseConsumedFive()
 
+// exmple ko async or promise dono me kara he
+//fetch 
+async function getAllUsers() {
+
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/")
+    console.log(response); //kiya response me data arha he 
+    const data = await response.json() // data ko json me change honi me time lagta he await use hoga
+    console.log(data);
+  } 
+  catch (error) {
+    console.log("Error"  , error);
+  }}
+
+
+const promiseSix = new Promise(function(resolve,reject){
+  
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  Promise — the old way (before async/await)
 // A Promise helps you run code that takes time (like fetching data), and handle success or error later using .then() and .catch().
 
@@ -105,7 +137,9 @@ getData()
 
 
 // async/await — modern and easier way
-// async/await makes Promise-based code look simpler, like normal step-by-step code. You write await in front of the Promise to wait for the result.
+// async/await makes Promise-based code
+// look simpler, like normal step-by-step code. 
+// You write await in front of the Promise to wait for the result.
 //  example
 async function showData() {
   try {
@@ -127,17 +161,6 @@ showData();
 
 
 
-//fetch 
-async function getAllUsers() {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/")
-    const data = response.json()
-    console.log(data);
-    
-  } catch (error) {
-    
-  }
-}
 
 
 
