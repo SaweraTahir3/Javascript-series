@@ -125,7 +125,9 @@ The new object is returned: After the constructor function has been called, if i
 ```
  ## Prototype 
  
-```javascript     
+```javascript
+const myAray = ["javascript" , "react"]
+ 
     const obj ={
       name : "sawera" ,
       logIn :true ,
