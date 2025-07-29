@@ -43,11 +43,11 @@
 console.log(user.getStudentmarks())
 console.log(this) // brower me  window  ati he node me empty {} ata he answer
 
+```
 
+## Constructor function
 
-// next topi 
-//Constructor function
-
+```javascript
 //  (new)  Constructor function ha Allow karta he ek he object literls multiple intance bana sako
 
 function user(username , logInCount ,logedIn){
