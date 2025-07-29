@@ -123,3 +123,31 @@ The constructor is called: The constructor function is called with the specified
 The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
     */
 ```
+ ## Prototype 
+ 
+```javascript     
+    const obj ={
+      name : "sawera" ,
+      logIn :true ,
+      getmyobj ; function(){
+        console.log(`my name is ${this.name} and  this is my account ${this.logIn}`)
+      }
+    }
+
+    Object.prototype.sawera = function(){
+   console.log('sawera is present all objects')
+    }
+
+  Array.prototype.saySawera = function(){
+    console.log(`sawera says hello`)
+  }
+
+    //obj.sawera()
+    myAray.sawera()
+
+    // obj.saySawera() //
+    myAray.saySawera() //
+```
+
+
+
