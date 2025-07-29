@@ -24,6 +24,7 @@
 - Inheritance 
 - Polymorphism
 
+ ##  Object literal
 ```javascript 
 //Object literal
 
