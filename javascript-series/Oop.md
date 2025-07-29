@@ -81,9 +81,11 @@ console.log(userdataa2)
 // 4  this hami deta he answer
 
 ```
-## function in object 
+## function in object (object litrals)
 
-```javascript function  multipleName(num){
+```javascript
+// object litrals and importants of new key word
+ function  multipleName(num){
     return num*5
 }
 
