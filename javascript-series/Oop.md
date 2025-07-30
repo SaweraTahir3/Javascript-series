@@ -150,6 +150,13 @@ const myAray = ["javascript" , "react"]
     // obj.saySawera() //
     myAray.saySawera() //
 ```
+## classes
+```javascript 
+
+```
 
 
+## Instances (new, this)
+```javascript
 
+```
