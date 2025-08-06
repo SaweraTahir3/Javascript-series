@@ -156,7 +156,19 @@ const myAray = ["javascript" , "react"]
 ```
 
 
-## Instances (new, this)
+## Inhertance 
 ```javascript
+const user = {
+username: "sawera" ,
+email : "sawera@gmail.com"
+}
+
+const teacher = {
+videoMaker : true,
+}
+
+const teacherSupport {
+isAvailable: false ,
+}
 
 ```
