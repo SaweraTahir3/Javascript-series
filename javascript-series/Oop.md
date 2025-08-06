@@ -167,8 +167,15 @@ const teacher = {
 videoMaker : true,
 }
 
-const teacherSupport {
+const teacherSupport = {
 isAvailable: false ,
 }
 
+const TAsupport= {
+makeAssiment : "js assiment" ,
+fullTime : true ,
+__proto__ : teacher Support 
+}
+
+teacher.__proto__ = user
 ```
