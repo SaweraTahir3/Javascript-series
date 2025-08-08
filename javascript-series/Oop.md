@@ -178,4 +178,24 @@ __proto__ : teacher Support
 }
 
 teacher.__proto__ = user
+
+//morden syantac 
+
+Object.setPrototypeOf(teacherSupport , teacher)
+
+//example 
+
+let journey = "advanceLevel   " 
+
+String.prototype.trueLength = function(){
+  console.log(this)
+  console.log(this.name)
+  console.log(`True Length is : ${this.trim().length}`)
+}
+journey.trueLength()
+"sawera".truelength()
+"javascript-series".trueLength()
+
+//complete
+
 ```
