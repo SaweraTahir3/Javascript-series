@@ -1,7 +1,7 @@
 //Arrays 
 
-const firstarray = [ 1,2,3,5,6];
-console.log(firstarray);
+const firstArray = [ 1,2,3,5,6];
+console.log(firstArray);
 
 const newArrays = new Array(1,2,3,4,5,6,7,8,9,)
 console.log(newArrays[4]);
@@ -200,3 +200,4 @@ console.log(somer.length);
 let arr = [1, 2, 3];
 let allGreaterThanZero = arr.every(x => x > 0); // true
 //array methods completed !
+
