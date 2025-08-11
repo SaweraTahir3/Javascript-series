@@ -28,29 +28,33 @@ outerFunction();
 ```html
  //Closure 
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Closure Color Change</title>
+  <title>Closure Color Buttons</title>
 </head>
 <body>
-  <button id="colorBtn">Change Color</button>
+  <button id="orangeBtn">Orange</button>
+  <button id="greenBtn">Green</button>
 
   <script>
-    function createColorChanger() {
-      let colors = ["red", "blue", "green", "yellow", "pink"];
-      let index = 0; // private variable
-
+    // Closure function to create a color changer
+    function createColorChanger(color) {
       return function() {
-        document.body.style.backgroundColor = colors[index];
-        index = (index + 1) % colors.length; // cycle colors
+        document.body.style.backgroundColor = color;
       };
     }
 
-    const changeColor = createColorChanger();
+    // Create closures for each button
+    const changeToOrange = createColorChanger("orange");
+    const changeToGreen = createColorChanger("green");
 
-    document.getElementById("colorBtn").addEventListener("click", changeColor);
+    // Attach events
+    document.getElementById("orangeBtn").addEventListener("click", changeToOrange);
+    document.getElementById("greenBtn").addEventListener("click", changeToGreen);
   </script>
 </body>
 </html>
+
+ 
 ```
