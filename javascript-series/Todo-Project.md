@@ -39,5 +39,10 @@ li.textContent = input.value
 list.appendChild(li)
 }
 
+removeButton.addEventListener('click' , function (){
+if (input.value === "namesss"){
+input.value.remove()
+}
+})
 
 ``` 
