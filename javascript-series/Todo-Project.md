@@ -7,7 +7,6 @@
   <title>To Do App</title>
 </head>
 <body>
- 
 <h1> Todo app</h1>
 <div>
 <input id="input" type="text" placeholder= "name"/>
